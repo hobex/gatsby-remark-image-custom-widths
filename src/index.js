@@ -163,7 +163,7 @@ module.exports = (
     }
 
     // If width attribute is set then overwrite gatsby-config's maxWidth
-    const args = width ? {  ...options, maxWidth: `${width}px` } : {  ...options, maxWidth: '100%' }
+    const args = width ? {  ...options, maxWidth: `${width}px` } : {  ...options, maxWidth: '1080px' }
 
     let fluidResult = await fluid({
       file: imageNode,
