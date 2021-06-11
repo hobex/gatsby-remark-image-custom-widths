@@ -215,6 +215,7 @@ module.exports = (
         srcset="${srcSet}"
         sizes="${fluidResult.sizes}"
         loading="${loading}"
+        style="opacity: 100"
       />
     `.trim()
 
