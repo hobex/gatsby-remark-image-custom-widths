@@ -206,6 +206,7 @@ module.exports = (
     }
 
     // Create our base image tag
+    let widthProp = width ? '' : 'width: 100%;'
     let imageTag = `
       <img
         class="${imageClass}"
@@ -215,7 +216,7 @@ module.exports = (
         srcset="${srcSet}"
         sizes="${fluidResult.sizes}"
         loading="${loading}"
-        style="opacity: 100"
+        style="opacity: 100;${widthProp}"
       />
     `.trim()
 
